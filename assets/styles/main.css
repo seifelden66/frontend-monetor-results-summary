@@ -1,0 +1,164 @@
+html *{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(20vh);
+
+}
+.left h3{
+    color: hsla(241, 100%, 89%, 0.726)  ;
+    margin-top: -5px;
+}
+.left p{
+    color: hsla(241, 100%, 89%, 0.726)  
+}
+.left{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 380px;
+    gap:-5px;
+    width: 250px;
+    color: white;
+    border-radius:20px ;
+}
+.right{
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0px 20px 20px hsla(241, 100%, 89%, 0.37);
+    border-radius: 0px 20px 20px 0px;
+}
+.circle{
+    background: linear-gradient( hsl(241, 81%, 54%), hsla(241, 81%, 54%, 0.021));
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle h1{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+.circle p{
+    position: relative;
+    transform: translateY(30px);
+    
+}
+.skills{
+    width: 250px;
+}
+.title{
+    color: hsl(224, 30%, 27%);
+}
+.skill{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.lf{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.res{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.res h4{
+    color: hsl(241, 100%, 89%);
+}
+.res h4:nth-child(1){
+    color: rgba(0, 0, 0, 0.767);
+}
+.skill:nth-child(1){
+    background-color: hsla(0, 100%, 67%, 0.048);
+    color:hsl(0, 85%, 64%) 
+    
+}
+.skill:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 0.048);
+    color:hsla(39, 100%, 56%)
+}
+.skill:nth-child(3){
+    background-color: hsl(166, 100%, 37%, 0.048);
+    color:hsl(166, 100%, 37%)
+}
+.skill:nth-child(4){
+    background-color: hsla(234, 85%, 45%, 0.048);
+    color:hsl(234, 85%, 45%)
+}
+
+button{
+    width: 100%;
+    margin-top: 10px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    transition: 300ms;
+    font-size: 15px;
+}
+button:hover{
+    background: linear-gradient(hsl(252, 93%, 58%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+@media screen and (max-width:768px ) {
+    .all{
+        transform: none;
+        margin-top:-10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left{
+        width: calc(100% - 17px);
+        border-radius:0px 0px 20px 20px ;
+        height: 340px;
+    }
+    .right{
+        align-self: flex-start;
+        width: calc(100% - 40px);
+
+    }
+    .skill{
+        padding: 10px;
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .skills{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+        background-color: hsl(224, 30%, 27%);
+        padding: 20px;
+        border-radius: 35px;
+        
+    }
+}
